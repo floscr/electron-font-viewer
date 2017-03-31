@@ -1,10 +1,18 @@
 <template>
   <div>
-    <ul>
-      <li v-for="font in fonts">
-        <thumbnail :font="font[0]"></thumbnail>
-      </li>
-    </ul>
+    <virtual-scroller
+      class="scroller"
+      :items="fonts"
+      item-height="200"
+      content-tag="ul"
+      >
+      <template scope="props">
+        <li>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Ghostscript_Tiger.svg" style="height: 30%" alt="">
+          {{ props.item[0].family }}
+        </li>
+      </template>
+    </virtual-scroller>
   </div>
 </template>
 
@@ -27,20 +35,26 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+.scroller {
   ul {
     // display: flex;
     // flex-wrap: wrap;
     width: 100%;
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    // grid-gap: 10px;
+    // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
     margin: 0;
     padding: 0;
   }
   li {
+    width: 100%;
+    padding: 5px;
     height: 200px;
+    max-height: 200px;
     list-style-type: none;
   }
+
+}
 </style>
