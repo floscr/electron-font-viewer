@@ -27,7 +27,7 @@ export default {
     saveImage (bounds, family) {
       return new Promise((resolve, reject) => {
         ipcRenderer.send('SAVE_IMAGE', { bounds, family })
-        ipcRenderer.on('IMAGE_SAVED', event => {
+        ipcRenderer.once('IMAGE_SAVED', event => {
           resolve()
         })
       })
