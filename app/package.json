@@ -4,6 +4,7 @@
   "description": "An electron-vue project",
   "main": "./dist/main.js",
   "dependencies": {
+    "app-reset": "^1.0.2",
     "font-manager": "^0.2.2",
     "lodash": "^4.17.4",
     "vue": "^2.1.10",
