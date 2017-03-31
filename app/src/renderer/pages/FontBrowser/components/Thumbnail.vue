@@ -1,11 +1,11 @@
 <template>
-  <div class="container" :style="{ fontFamily: font.family }" tabindex="0">
-    <div class="font-name">{{ font.family }}</div>
+  <div class="container" :style="{ fontFamily: font }" tabindex="0">
+    <div class="font-name">{{ font }}</div>
     <svg class="font-preview" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <text x="0" y="100%">Aa</text>
     </svg>
     <div class="font-family">
-      {{ font.family }}
+      {{ font }}
     </div>
   </div>
 </template>
@@ -14,7 +14,7 @@
 export default {
   props: {
     font: {
-      type: Object,
+      type: String,
       required: true,
     }
   },

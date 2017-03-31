@@ -1,6 +1,9 @@
 'use strict'
 
-import { app, BrowserWindow } from 'electron'
+import { app, BrowserWindow, ipcMain } from 'electron'
+import fs from 'fs'
+
+console.log(app.getPath('appData'))
 
 import fontManager from './fontManager'
 
@@ -22,6 +25,16 @@ function createWindow () {
   })
 
   fontManager()
+
+  ipcMain.on('SAVE_IMAGE', (event, { bounds, family }) => {
+    mainWindow.capturePage(bounds, image => {
+      const buff = image.toPNG()
+      fs.writeFile(`${family}.png`, buff, err => {
+        if (err) console.error(err)
+        event.sender.once('IMAGE_SAVED')
+      })
+    })
+  })
 
   mainWindow.loadURL(winURL)
 

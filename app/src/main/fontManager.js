@@ -12,6 +12,9 @@ export default function fontLoader () {
   })
 };
 
+ipcMain.on(ipcTypes.SAVE_IMAGE, (event, buffer) => {
+})
+
 // function disabledFontsPlistLoader (event) {
 //   plist.readFile(expandHomeDir('~/Library/Preferences/com.apple.FontRegistry.user.plist'), (data, err) => {
 //     if (err) { throw err }

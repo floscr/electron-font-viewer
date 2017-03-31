@@ -2,6 +2,7 @@ module.exports = {
   root: true,
   parser: 'babel-eslint',
   parserOptions: {
+    ecmaVersion: 2017,
     sourceType: 'module'
   },
   env: {
@@ -21,5 +22,6 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     // Disable comma dangle error
     'comma-dangle': 0,
+    'no-unused-vars': 0,
   }
 }
