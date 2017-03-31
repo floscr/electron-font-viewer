@@ -10,6 +10,7 @@
     "app-reset": "^1.0.2",
     "font-manager": "^0.2.2",
     "lodash": "^4.17.4",
+    "stream-to-promise": "^2.2.0",
     "vue": "^2.1.10",
     "vue-electron": "^1.0.6",
     "vue-resource": "^1.0.3",
