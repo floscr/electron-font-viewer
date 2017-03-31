@@ -4,12 +4,16 @@
   "description": "An electron-vue project",
   "main": "./dist/main.js",
   "dependencies": {
+    "font-manager": "^0.2.2",
+    "lodash": "^4.17.4",
     "vue": "^2.1.10",
     "vue-electron": "^1.0.6",
     "vue-resource": "^1.0.3",
     "vue-router": "^2.1.2",
     "vuex": "^2.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "electron-rebuild": "^1.5.7"
+  },
   "author": "Florian Schroedl Home <flo.schroedl@gmail.com>"
 }
