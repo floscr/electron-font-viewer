@@ -26,3 +26,17 @@ export default {
 
 }
 </script>
+
+<style lang="scss" scoped>
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  ul, li {
+    width: 100%;
+  }
+  li {
+    list-style-type: none;
+    padding: 10px;
+  }
+</style>
