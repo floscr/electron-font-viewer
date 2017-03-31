@@ -10,6 +10,8 @@
     "app-reset": "^1.0.2",
     "font-manager": "^0.2.2",
     "lodash": "^4.17.4",
+    "mkdirp": "^0.5.1",
+    "mkdirp-promise": "^5.0.1",
     "pn": "^1.0.0",
     "stream-to-promise": "^2.2.0",
     "svg2png": "^4.1.1",

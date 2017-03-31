@@ -20,7 +20,7 @@ export default {
     changeFont (font) {
       return new Promise((resolve, reject) => {
         this.font = font
-        setTimeout(() => { resolve() }, 10)
+        resolve()
       })
     },
 
