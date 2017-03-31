@@ -23,3 +23,9 @@ export default {
 
 }
 </script>
+
+<style scoped>
+.wrapper {
+  padding: 1em;
+}
+</style>

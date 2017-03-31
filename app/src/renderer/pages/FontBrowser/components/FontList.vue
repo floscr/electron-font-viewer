@@ -29,14 +29,18 @@ export default {
 
 <style lang="scss" scoped>
   ul {
+    // display: flex;
+    // flex-wrap: wrap;
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
     margin: 0;
     padding: 0;
   }
-  ul, li {
-    width: 100%;
-  }
   li {
+    height: 200px;
     list-style-type: none;
-    padding: 10px;
   }
 </style>
