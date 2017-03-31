@@ -2,7 +2,7 @@ export default [
   {
     path: '/',
     name: 'font-browser',
-    component: require('pages/FontBrowser')
+    component: require('pages/FontBrowser/Index')
   },
   {
     path: '*',
