@@ -5,10 +5,22 @@
 </template>
 
 <script>
-  import store from 'renderer/vuex/store'
-  export default {
-    store
-  }
+import store from 'renderer/vuex/store'
+import { mapActions } from 'vuex'
+
+export default {
+  store,
+
+  mounted () {
+    this.loadFonts()
+  },
+
+  methods: {
+    ...mapActions([
+      'loadFonts'
+    ]),
+  },
+}
 </script>
 
 <style>

@@ -2,6 +2,8 @@
 
 import { app, BrowserWindow } from 'electron'
 
+import fontManager from './fontManager'
+
 let mainWindow
 const winURL = process.env.NODE_ENV === 'development'
   ? `http://localhost:${require('../../../config').port}`
@@ -15,6 +17,8 @@ function createWindow () {
     height: 600,
     width: 800
   })
+
+  fontManager()
 
   mainWindow.loadURL(winURL)
 

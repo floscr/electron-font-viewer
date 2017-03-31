@@ -97,7 +97,9 @@ let rendererConfig = {
   resolve: {
     alias: {
       'components': path.join(__dirname, 'app/src/renderer/components'),
-      'renderer': path.join(__dirname, 'app/src/renderer')
+      'pages': path.join(__dirname, 'app/src/renderer/pages'),
+      'renderer': path.join(__dirname, 'app/src/renderer'),
+      'main': path.join(__dirname, 'app/src/main'),
     },
     extensions: ['.js', '.vue', '.json', '.css', '.node'],
     modules: [
