@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <font-list :fonts="allFonts"></font-list>
+  <div class="wrapper">
+    <font-list :fonts="groupedFonts"></font-list>
   </div>
 </template>
 

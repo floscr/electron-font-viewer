@@ -2,7 +2,7 @@
   <div>
     <ul>
       <li v-for="font in fonts">
-        <thumbnail :font="font"></thumbnail>
+        <thumbnail :font="font[0]"></thumbnail>
       </li>
     </ul>
   </div>
